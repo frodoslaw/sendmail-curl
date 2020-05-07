@@ -4,7 +4,7 @@ WORKDIR /etc/mail
 
 RUN set -e && \
  apt-get update && \
- apt-get install -y sendmail \
+ apt-get install -y sendmail && \
  apt-get install -y curl
 
 COPY sendmail.mc /etc/mail/sendmail.mc
